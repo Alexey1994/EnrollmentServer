@@ -12,7 +12,6 @@ public class ExamsGetter extends ServerResource
     public String toString()
     {
 		DB         db     = new DB();
-		//ResultSet  db_set = db.query("SELECT * FROM Enrollment.Exams");
 		ResultSet  db_set = db.query("SELECT * FROM "+DB.database+".Exams");
 		JSONObject exam   = null;
 		JSONArray  exams  = new JSONArray();
